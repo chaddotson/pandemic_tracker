@@ -71,5 +71,3 @@ class TennesseePandemicDataDownloader(PandemicDataDownloader):
 #     dataframe = pd.read_excel(daily_pandemic_data.content, sheet_name='ALL_COUNTY_FINAL_PUBLIC')
 #
 #     return dataframe
-
-

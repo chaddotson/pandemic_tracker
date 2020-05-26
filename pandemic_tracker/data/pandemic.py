@@ -64,11 +64,12 @@ class TennesseePandemicDataDownloader(PandemicDataDownloader):
         # return tennessee_pandemic_data
 
 
-def get_state_data():
-    data_url = 'https://www.tn.gov/content/dam/tn/health/documents/cedep/novel-coronavirus/datasets/Public-Dataset-County-New.XLSX'
-    daily_pandemic_data = requests.get(data_url)
-    dataframe = pd.read_excel(daily_pandemic_data.content, sheet_name='ALL_COUNTY_FINAL_PUBLIC')
-
-    return dataframe
+# def get_state_data():
+#     data_url = 'https://www.tn.gov/content/dam/tn/health/documents/cedep/novel-coronavirus/datasets/Public-Dataset-County-New.XLSX'
+#     # NOTE: Using requests is not required since pandas can read the URL directly.
+#     daily_pandemic_data = requests.get(data_url)
+#     dataframe = pd.read_excel(daily_pandemic_data.content, sheet_name='ALL_COUNTY_FINAL_PUBLIC')
+#
+#     return dataframe
 
 
